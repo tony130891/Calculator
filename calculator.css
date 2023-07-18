@@ -1,0 +1,41 @@
+.container {
+  position: absolute;
+  background-color: gray;
+  margin-top: 30%;
+  left: 50%;
+  width: 300px;
+  flex: 1;
+  transform: translate(-50%, -50%);
+}
+
+.row {
+  display: flex;
+  gap: 60px;
+}
+
+.column {
+  background-color: blue;
+  flex: 1;
+  margin-right: 25%;
+}
+
+.result {
+  display: flex;
+  flex-direction: row;
+}
+
+.operators {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 25px;
+  background-color: aqua;
+}
+
+.operand {
+  background-color: blueviolet;
+}
+
+.equal {
+  background-color: chocolate;
+}
