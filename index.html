@@ -1,48 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="calculator.css">
-  <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="calculator.css" />
+  <title>Calculator</title>
 </head>
+
 <body>
-  <div class="calculator">
-          <div class="top-rows">
-              <div class="space">0</div>
-          </div>
-          <div class="mid-rows">
-            <button class="btn-secondary op">+</button>
-            <button class="btn-secondary op">-</button>
-            <button class="btn-secondary op">x</button>
-            <button class="btn-secondary op">/</button>
-          </div>
-          <div class="other-row">
-            <button class="btn-dark num">7</button>
-            <button class="btn-dark num">8</button>
-            <button class="btn-dark num">9</button>
-          </div>
-          <div class="other-row">
-            <button class="btn-dark num">4</button>
-            <button class="btn-dark num">5</button>
-            <button class="btn-dark num">6</button>
-          </div>
-          <div class="other-row">
-            <button class="btn-dark num">1</button>
-            <button class="btn-dark num">2</button>
-            <button class="btn-dark num">3</button>
-          </div>
-          <div class="other-row">
-            <button class="btn-dark num">0</button>
-            <button class="btn-dark dot">.</button>
-            <button class="btn-dark delete">C</button>
-          </div>
-          <div class="last-row">
-            <button class="btn-dark equal">=</button>
-          </div>
-  </div>        
+  <div class="container">
+    <div class="calculator">
+      <input type="text" id="inputBox" placeholder="0" />
+      <div>
+        <button class="button operator">AC</button>
+        <button class="button operator">DEL</button>
+        <button class="button operator">%</button>
+        <button class="button operator">/</button>
+      </div>
+      <div>
+        <button class="button">7</button>
+        <button class="button">8</button>
+        <button class="button">9</button>
+        <button class="button operator">*</button>
+      </div>
+      <div>
+        <button class="button">4</button>
+        <button class="button">5</button>
+        <button class="button">6</button>
+        <button class="button operator">-</button>
+      </div>
+      <div>
+        <button class="button">1</button>
+        <button class="button">2</button>
+        <button class="button">3</button>
+        <button class="button operator">+</button>
+      </div>
+
+      <div>
+        <button class="button">00</button>
+        <button class="button">0</button>
+        <button class="button">.</button>
+        <button class="button equal">=</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="calculator.js"></script>
 </body>
-<script src="calculator.js"></script>
+
 </html>
