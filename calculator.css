@@ -61,6 +61,7 @@ button {
   color: #6dee0a;
 }
 
-.delete {
-  color: #6dee0a;
+.eraser,
+.delete{
+  color: red;
 }
