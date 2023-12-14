@@ -7,6 +7,7 @@ const btnDeleter = document.querySelector("button.delete");
 let num1 = "";
 let num2 = "";
 let operators = "";
+let inputVal = displayer.value;
 
 const add = (a, b) => {
   return a + b;
@@ -50,7 +51,10 @@ function operate(num1, operators, num2) {
 
 // Create the functions that populate the display when you click the number buttons. You should be storing the ‘display value’ in a variable somewhere for use in the next step.
 
-function displayBtn() {
-  let input = displayer.textContent;
-  console.log(input);
+function inputChanger() {
+  for (let btnNums of btn) {
+    btnNums.addEventListener("click", function () {
+      inputVal = btnNums.textContent;
+    });
+  }
 }
